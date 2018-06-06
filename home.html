@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+</head>
+<body>
+    <form action="" class="myForm">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" id="name" class="name" oninput="checkInput()">
+        </div><br>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email" class="email" oninput="checkInput()">
+        </div><br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" class="password" oninput="checkInput()" onkeyup="passwordKeyUp()">
+            <p style="display: none;" id="inv_password">Password atleast six characters long!</p>
+        </div><br>
+        <div>
+            <input type="submit" value="Register" class="reg-button" disabled>
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
